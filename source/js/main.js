@@ -1,21 +1,17 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-
-// ---------------------------------
+import './vendor/iphone-inline-video';
+import './vendor/swiper';
+import {initCoachesSwiper} from './blog-slider';
+import {initReviewsSwiper} from './reviews-slide';
+import {initTabs} from './modules/tabs/init-tabs';
 
 window.addEventListener('DOMContentLoaded', () => {
-
-  // Utils
-  // ---------------------------------
-
+  initTabs();
   iosVhFix();
-
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
+  initCoachesSwiper();
+  initReviewsSwiper();
   window.addEventListener('load', () => {
     initModals();
     const form = new Form();

@@ -1,0 +1,67 @@
+.tabs__controls {
+  padding: 0 0 39px;
+}
+
+.tabs__block {
+  width: 30%;
+  margin: 0 auto;
+  height: 51px;
+  border-bottom: 2.1px solid #dedfe2;
+
+  @include vp-1023 {
+    display: flex;
+    width: 51.3%;
+    justify-content: space-between;
+  }
+}
+
+.tabs__control {
+  cursor: pointer;
+  width: auto;
+  text-align: start;
+  padding: 0 0 19.5px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 150%;
+  color: #848fa8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: transparent;
+  user-select: none;
+  text-transform: none;
+  opacity: 1;
+
+  &:hover,
+  &:focus {
+    color: #102654;
+    border-bottom: 2px solid #d10a42;
+  }
+
+  &:active {
+    border-bottom: 2px solid #d10a42;
+  }
+
+  @include vp-1023 {
+    padding: 0 0 49px;
+  }
+}
+
+.tabs__control:not(:last-child) {
+  margin: 0 46px 21px 0;
+
+  @include vp-1023 {
+    margin: 0 20px 0 0;
+  }
+}
+
+.tabs__content,
+.tabs__element,
+.tabs__sub-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  background-color: #f8f9fc;
+}

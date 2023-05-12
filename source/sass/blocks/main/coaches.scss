@@ -1,0 +1,124 @@
+.coaches {
+  width: 100%;
+  padding: 0 40px 120px;
+}
+
+.coaches__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coaches__title {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0 0 40px;
+}
+
+.coaches__swiper {
+  max-width: 100%;
+}
+
+.coaches__swiper-wrapper {
+  max-width: 554px;
+}
+
+.coaches__slide {
+  cursor: grab;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  z-index: 1;
+  min-height: 294px;
+  max-width: 260px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.coaches__slide .coaches__name {
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.coaches__slide:hover .coaches__body {
+  right: 0;
+}
+
+.coaches__body .coaches__name {
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.coaches__slide:hover .coaches__name--hidden {
+  display: none;
+}
+
+.coaches__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: #102654;
+  opacity: 89%;
+  padding: 58px 57px 58px 55px;
+  box-sizing: border-box;
+  transition: 1s;
+  overflow-y: scroll;
+}
+
+.coaches__body p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.coaches__body ul {
+  padding: 0;
+  margin: 0;
+}
+
+.coaches__body li {
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.coaches__body li:not(:last-child) {
+  margin: 0 0 10px;
+}
+
+.coaches__picture {
+  width: 268px;
+  height: 294px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  user-select: none;
+}
+
+.coaches__picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #102654;
+}

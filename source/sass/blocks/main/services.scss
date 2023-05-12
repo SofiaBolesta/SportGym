@@ -1,0 +1,32 @@
+.services {
+  position: relative;
+  width: 100%;
+  padding: 0 60px;
+  background-color: #f8f9fc;
+  z-index: 1;
+}
+
+.services__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 120px 0;
+
+}
+
+.services__title {
+  font-family: "AlumniSans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin: 0 0 25px;
+  text-align: center;
+}
+
+.services__picture {
+  position: absolute;
+  bottom: -150px;
+  right: 0;
+  z-index: 0;
+  margin: 0;
+}

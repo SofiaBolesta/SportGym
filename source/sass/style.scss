@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -14,6 +14,8 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/data-tabs";
+@import "global/tabs";
 
 // Blocks
 // ---------------------------------
@@ -23,6 +25,20 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header/header";
+@import "blocks/main/promo";
+@import "blocks/main/services";
+@import "blocks/main/card";
+@import "blocks/main/tabs";
+@import "blocks/main/blog";
+@import "blocks/main/coaches";
+@import "blocks/main/advantages";
+@import "blocks/main/promotions";
+@import "blocks/main/reviews";
+@import "blocks/main/joint-container";
+@import "blocks/main/form";
+@import "blocks/main/contacts";
+@import "blocks/footer/footer";
 
 // ---------------------------------
 
