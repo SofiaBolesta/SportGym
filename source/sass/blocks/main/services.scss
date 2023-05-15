@@ -4,6 +4,10 @@
   padding: 0 60px;
   background-color: #f8f9fc;
   z-index: 1;
+
+  @include vp-767 {
+    padding: 35px 15px;
+  }
 }
 
 .services__wrapper {
@@ -11,6 +15,13 @@
   margin: 0 auto;
   padding: 120px 0;
 
+  @include vp-1023 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
 }
 
 .services__title {
@@ -19,8 +30,20 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 0 0 25px;
+  margin: 0 0 19px;
   text-align: center;
+
+  @include vp-1023 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 14px 21px 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .services__picture {
@@ -29,4 +52,17 @@
   right: 0;
   z-index: 0;
   margin: 0;
+
+  @include vp-1023 {
+    bottom: -130px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.services__picture img {
+  width: 100%;
+  height: 100%;
 }

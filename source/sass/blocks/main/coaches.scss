@@ -1,15 +1,19 @@
 .coaches {
   width: 100%;
   padding: 0 40px 120px;
+
+  @include vp-767 {
+    padding: 35px 15px;
+  }
 }
 
 .coaches__wrapper {
-  max-width: 1160px;
+  max-width: 1276px;
   margin: 0 auto;
-  display: flex;
+/*  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: center;*/
 }
 
 .coaches__title {
@@ -18,15 +22,44 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 0 0 40px;
+  margin: 0 0 47px 59px;
+
+  @include vp-1023 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 6px 31px 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 50px;
+  }
+}
+
+.coaches__container-swiper {
+/*  width: 1276px;
+  margin: 0 auto;*/
 }
 
 .coaches__swiper {
-  max-width: 100%;
+
+  @include vp-1023 {
+    max-width: 678px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .coaches__swiper-wrapper {
-  max-width: 554px;
+/*  width: 1160px;
+  grid-column: 2;*/
+  @include vp-1023 {
+    max-width: 566px;
+  }
 }
 
 .coaches__slide {
@@ -42,6 +75,7 @@
   height: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  text-align: center;
 }
 
 .coaches__slide .coaches__name {
@@ -49,7 +83,7 @@
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
-  margin: 0 0 30px;
+  margin: 0 0 23px;
 }
 
 .coaches__slide:hover .coaches__body {
@@ -57,7 +91,7 @@
 }
 
 .coaches__body .coaches__name {
-  margin: 0 0 0 0;
+  margin: 0 0 -3px 0;
   text-align: center;
 }
 
@@ -86,7 +120,7 @@
   line-height: 150%;
   color: #b6bdcc;
   text-align: center;
-  margin: 0 0 20px;
+  margin: 0 0 34px;
 }
 
 .coaches__body ul {
@@ -113,6 +147,11 @@
   left: 0;
   z-index: -1;
   user-select: none;
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .coaches__picture img {
@@ -122,3 +161,11 @@
   object-fit: cover;
   background-color: #102654;
 }
+
+/*.coaches__button-prev {
+  grid-column: 1;
+}
+
+.coaches__button-next {
+  grid-column: 3;
+}*/

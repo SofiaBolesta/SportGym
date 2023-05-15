@@ -4,18 +4,22 @@
   border-top: 1px solid #102654;
 
   @include vp-1023 {
-    padding: 70px 45px;
+    padding: 62px 45px 45px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
   }
 }
 
 .contacts__wrapper {
-  max-width: 404px;
+  max-width: 439px;
   padding: 0;
   height: 100%;
   margin: 0 auto;
 
   @include vp-1023 {
-    min-width: 456px;
+    min-width: 500px;
   }
 }
 
@@ -24,20 +28,46 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0 0 30px;
+  margin: 0 0 37px;
   color: #102654;
+
+  @include vp-1023 {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 0 31px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .contacts__list {
   display: grid;
-  grid-template-columns: repeat(2, auto);/*minmax(auto, 226px)*/
+  grid-template-columns: 232px auto;
   grid-template-rows: repeat(2, auto);
   margin: 0;
-  gap: 0 46px;
+  gap: 0 60px;
+
+  @include vp-1023 {
+    grid-template-columns: 266px auto;
+    gap: 5px 47px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contacts__item:nth-child(-n + 3):not(:nth-child(2n)) {
   border-right: 1px solid #74819c;
+
+  @include vp-767 {
+    border: none;
+  }
 }
 
 .contacts__item dt {
@@ -46,6 +76,18 @@
   font-size: 16px;
   line-height: 24px;
   color: #102654;
+
+  @include vp-1023 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0 0 6px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__item dd {
@@ -53,4 +95,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #102654;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

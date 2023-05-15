@@ -10,7 +10,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .tabs__control {
@@ -47,23 +47,23 @@
 }
 
 .tabs__element p:not(:last-child) {
-  margin: 0 0 20px 0;
+  margin: 0 0 33px 0;
 }
 
 .tabs__element:nth-child(1) {
-  background-color: rgb(250, 235, 215);
+  background-color: transparent;
 }
 
 .tabs__element:nth-child(2) {
-  background-color: rgb(229, 250, 215);
+  background-color: transparent;
 }
 
 .tabs__element:nth-child(3) {
-  background-color: rgb(180, 188, 233);
+  background-color: transparent;
 }
 
 .tabs__element:nth-child(4) {
-  background-color: rgb(255, 187, 204);
+  background-color: transparent;
 }
 
 .tabs--unset .tabs__content {

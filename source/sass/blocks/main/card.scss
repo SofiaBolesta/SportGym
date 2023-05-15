@@ -6,12 +6,13 @@
   @include vp-1023 {
     display: flex;
     flex-direction: column;
+    gap: 47px;
   }
 }
 
 .card__item {
   width: 100%;
-  padding: 54px 66px;
+  padding: 51px 66px 59px 66px;
   background-color: #ffffff;
   border: 7px solid #ffffff;
 
@@ -27,8 +28,10 @@
     max-width: 442px;
     margin: 0 auto;
   }
-/*  display: flex;
-  flex-direction: column;*/
+
+  @include vp-767 {
+    padding: 55px 42px;
+  }
 }
 
 .card__content {
@@ -41,14 +44,24 @@
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 26px;
   line-height: 40px;
-  text-transform: capitalize;
-  margin: 0 0 22px;
+  text-transform: none;
+  margin: 0 0 3px;
   color: #102654;
   text-align: center;
+
+  @include vp-1023 {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110.16%;
+  }
 }
 
 .card__content small {
-  margin: 0 0 50px;
+  margin: 0 0 66px;
   text-align: center;
   font-size: 16px;
   line-height: 150%;
@@ -61,7 +74,7 @@
   justify-content: center;
   position: relative;
   text-align: center;
-  margin: 0 0 30px;
+  gap: 15px;
 }
 
 .card__price-number {
@@ -70,6 +83,10 @@
   line-height: 150%;
   color: #103aae;
   z-index: 1;
+
+  @include vp-767 {
+    font-size: 48px;
+  }
 }
 
 .card__icon-rublick {
@@ -80,24 +97,53 @@
   display: block;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 12px;
-  padding: 21px 37px;
+  padding: 25px 0;
+  margin: 0 3px;
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #102654;
   text-align: center;
   border: 2px solid #102654;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: #ffffff;
+    border: 2px solid;
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 1;
+    box-sizing: border-box;
+  }
+
+  @include vp-1023 {
+    margin: 0 10px;
+    padding: 24px 0;
+  }
+
+  @include vp-767 {
+    line-height: 14px;
+    padding: 21px 0;
+  }
 }
 
 .card__back {
   position: absolute;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 100px;
   line-height: 70%;
   color: #e8e8e8;
   opacity: 0.48;
   margin: 0;
   z-index: 0;
+  top: 5px;
+
+  @include vp-1023 {
+    top: -14px;
+  }
+
+  @include vp-767 {
+    font-size: 80px;
+    line-height: 150%;
+  }
 }

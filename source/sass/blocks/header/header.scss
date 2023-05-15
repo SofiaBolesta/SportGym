@@ -1,7 +1,15 @@
 .header {
   width: 100%;
-  padding-bottom: 65px;
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);;
+  padding-bottom: 48px;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+
+  @include vp-1023 {
+    padding-bottom: 73px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 80px;
+  }
 }
 
 .header__container-menu {
@@ -9,10 +17,16 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 0 0;
 
   @include vp-1023 {
-    padding: 40px 0 25px;
+    padding: 31px 0 32px;
+  }
+
+  @include vp-767 {
+    padding: 15px 0;
+    align-items: center;
   }
 }
 
@@ -28,6 +42,20 @@
 
 .header__item {
   grid-column: -1;
+  margin: 3px 0 0;
+}
+
+.header__logo {
+  margin: 10px 0 0;
+
+  @include vp-1023 {
+    max-width: 80.5px;
+    margin: 3px 0 0;
+  }
+
+  @include vp-767 {
+    max-width: 69px;
+  }
 }
 
 .header__link {
@@ -36,17 +64,37 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  @include vp-1023 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .header__container-promo {
   max-width: 1160px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 33% 69%;
-  gap: 95px;
+  grid-template-columns: 397px auto;
+  gap: 64px;
 
   @include vp-1023 {
-    grid-template-columns: 51% 49%;
+    grid-template-columns: 49% 47.5%;
+    grid-template-rows: 386px;
+    gap: 23px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
     gap: 0;
   }
 }
@@ -56,15 +104,25 @@
   display: grid;
   grid-template-columns: repeat(2, auto);/*113px 247px*/
   grid-template-rows: 37px 191px 150px;
-  gap: 25px 17px;
-  margin-top: 108px;
+  gap: 35px 20px;
+  align-items: end;
+  justify-content: end;
+  margin-top: 98px;
 
   @include vp-1023 {
     grid-template-columns: 113px auto;
     grid-template-rows: 37px 157px 104px;
     gap: 15px 0;
     align-items: end;
-    margin-top: 62px;
+    margin-top: 37px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: 37px 157px 104px;
+    margin-top: 65px;
+    justify-content: end;
   }
 }
 
@@ -77,13 +135,18 @@
   font-size: 96px;
   line-height: 110px;
   text-align: right;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   color: #ffffff;
+  -webkit-text-stroke: 2px #ffffff;
+  text-transform: uppercase;
   margin: 0;
 
   @include vp-1023 {
     font-size: 72px;
     line-height: 86px;
+    margin: 0 8px -11px 0;
+    letter-spacing: 3.5px;
+    text-transform: none;
   }
 }
 
@@ -97,11 +160,21 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   text-align: center;
-  margin: 0 0 0 44px;
+  margin: 0 0 0 60px;
 
   @include vp-1023 {
     font-size: 34px;
     line-height: 41px;
+    max-height: 37px;
+    margin: 0 12px 0 0;
+    text-align: end;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    text-align: right;
   }
 }
 
@@ -115,14 +188,23 @@
   line-height: 150%;
   text-align: right;
   color: #ffffff;
-  margin: 0;
+  margin: 0 0 5px;
   align-items: flex-end;
+
+  @include vp-1023 {
+    margin: 0 0 10px;
+  }
+
+  @include vp-767 {
+    grid-column: 1/-1;
+    margin: 0 174px 0 0;
+  }
 }
 
 .header__button {
   grid-column: 2;
   grid-row: 3;
-  margin: 93px 0 0;
+  margin: 0 0 0 15px;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -131,21 +213,35 @@
   color: #ffffff;
   background-color: transparent;
   border: 4px solid #ffffff;
+  align-self: center;
+  padding: 19px 0;
 
   @include vp-1023 {
-    margin: 0;
-    padding: 24px 0;
+    margin: 21px 5px 0 26px;
+    padding: 19px 0;
+  }
+
+  @include vp-767 {
+    grid-column: 1/-1;
   }
 }
 
 .header__picture {
   display: block;
   grid-column: 2;
+  margin: -10px 0 0;
 
   @include vp-1023 {
-    width: 324px;
-    height: 390px;
+    min-width: 324px;
+    margin: -14px 0 0;
+    height: auto;
     justify-self: flex-end;
+  }
+}
+
+.header__picture--mobile-hidden {
+  @include vp-767 {
+    display: none;
   }
 }
 

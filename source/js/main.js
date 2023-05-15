@@ -6,12 +6,14 @@ import './vendor/swiper';
 import {initCoachesSwiper} from './blog-slider';
 import {initReviewsSwiper} from './reviews-slide';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initPlayVideo} from './play-video';
 
 window.addEventListener('DOMContentLoaded', () => {
   initTabs();
   iosVhFix();
   initCoachesSwiper();
   initReviewsSwiper();
+  initPlayVideo();
   window.addEventListener('load', () => {
     initModals();
     const form = new Form();

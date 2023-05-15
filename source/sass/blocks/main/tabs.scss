@@ -1,25 +1,38 @@
 .tabs__controls {
-  padding: 0 0 39px;
+  padding: 0 0 0;
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .tabs__block {
   width: 30%;
   margin: 0 auto;
-  height: 51px;
+  height: 42px;
   border-bottom: 2.1px solid #dedfe2;
 
   @include vp-1023 {
     display: flex;
     width: 51.3%;
+    height: 39px;
     justify-content: space-between;
   }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.tabs__controls {
+  margin-bottom: 43px;
 }
 
 .tabs__control {
   cursor: pointer;
   width: auto;
   text-align: start;
-  padding: 0 0 19.5px;
+  padding: 0 0 10.5px;
   margin: 0;
   font-size: 20px;
   line-height: 150%;
@@ -44,12 +57,14 @@
   }
 
   @include vp-1023 {
-    padding: 0 0 49px;
+    padding: 0 0 38px;
+    font-size: 18px;
+    line-height: 150%;
   }
 }
 
 .tabs__control:not(:last-child) {
-  margin: 0 46px 21px 0;
+  margin: 0 45px 0 0;
 
   @include vp-1023 {
     margin: 0 20px 0 0;
@@ -63,5 +78,18 @@
   padding: 0;
   list-style-type: none;
   width: 100%;
-  background-color: #f8f9fc;
+  background-color: transparent;
+}
+
+.tabs__sub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs__element p:not(:last-child) {
+
+  @include vp-1023 {
+    margin: 0 0 36px 0;
+  }
 }

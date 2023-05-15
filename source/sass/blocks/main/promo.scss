@@ -1,42 +1,74 @@
 .promo {
-  position: relative;
   width: 100%;
   padding: 120px 60px;
 
   @include vp-1023 {
     padding: 100px 45px;
   }
+
+  @include vp-767 {
+    padding: 70px 0 35px;
+  }
 }
 
 .promo__wrapper {
   max-width: 1160px;
   margin: 0 auto;
+
+  @include vp-767 {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 
 .promo__content-container {
   display: flex;
   gap: 85px;
+  justify-content: space-between;
 
   @include vp-1023 {
     flex-direction: column;
-    gap: 50px;
+    gap: 45px;
+  }
+
+  @include vp-767 {
+    gap: 40px;
   }
 }
 
-.promo__content-container h2 {
+.promo__description {
+  padding: 37px 0 0 59px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
+}
+
+.promo__description h2 {
   font-family: "AlumniSans", "Arial", sans-serif;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 0;
+  margin: 0 0 10px;
 
   @include vp-1023 {
     text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.3px;
+    margin: 0 0 0 -15px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    padding: 0 15px;
+    text-align: left;
   }
 }
 
-.promo__content-container span {
+.promo__description span {
   font-size: 18px;
   line-height: 150%;
   color: #102654;
@@ -45,6 +77,11 @@
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    text-align: left;
   }
 }
 
@@ -55,43 +92,144 @@
   color: #102654;
   max-width: 355px;
   display: block;
+  margin: 37px 0 0;
+
+  @include vp-1023 {
+    display: block;
+    text-align: center;
+    margin: 33px auto 0;
+    max-width: 100%;
+  }
+}
+
+.promo__desktop .promo__tablet {
+  display: block;
+  font-family: "RobotoCondensed-Light", "Arial", sans-serif;
+  font-size: 16px;
+  margin: 9px 0 0;
+/*  font-family: "RobotoCondensed-Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102654;
+  margin: 67px auto 0;
+  max-width: 502px;
+  text-align: center;*/
 
   @include vp-1023 {
     display: none;
   }
-}
 
-.promo__tablet {
-  display: none;
-
-  @include vp-1023 {
-    display: block;
-    font-family: "RobotoCondensed-Light", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 150%;
-    color: #102654;
-    margin: 67px auto 0;
-    max-width: 502px;
-    text-align: center;
-  }
-}
-
-.promo__video {
-  position: absolute;
-
-  @include vp-1023 {
-    z-index: 1;
-    bottom: 33px;
-    right: 237px;
+  @include vp-767 {
+/*    padding: 0 15px;
+    margin: 40px 0 0;
+    text-align: left;*/
   }
 }
 
 .promo__picture {
-  @include vp-1023 {
-    margin: 0 auto;
-  }
+  height: 345px;
 }
 
 .promo__picture img {
   max-width: 100%;
+
+  @include vp-1023 {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.promo__container-video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -113px 0 0 77px;
+
+  @include vp-1023 {
+    margin: -85px 0 0 0;
+  }
+}
+
+.promo__video {
+  width: 364px;
+  height: 228px;
+
+  @include vp-1023 {
+    width: 266px;
+    height: 167px;
+  }
+/*
+  @include vp-767 {
+    position: inherit;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 40px auto 0;
+  }*/
+}
+
+.promo__picture-video {
+  position: absolute;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1023 {
+    width: 266px;
+    height: 167px;
+  }
+}
+
+.promo__picture-video img {
+  object-fit: cover;
+}
+
+.promo__shadow {
+  background-color: #14367A80;
+  position: absolute;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1023 {
+    width: 266px;
+    height: 167px;
+  }
+}
+
+.promo__container-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  outline: 2px solid rgba(#ed0233, 0.3);
+
+  @include vp-1023 {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.promo__video-play {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  @include vp-1023 {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.promo__icon-play {
+  fill: #ffffff;
+  margin: 0 0 0 3px;
 }
