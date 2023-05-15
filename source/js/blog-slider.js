@@ -18,8 +18,6 @@ export const initCoachesSwiper = () => {
           },
           768: {
             slidesPerView: 2,
-            centeredSlides: true,
-            slidesPerColumn: 1,
             spaceBetween: 30,
           },
           1200: {
@@ -28,7 +26,6 @@ export const initCoachesSwiper = () => {
             spaceBetween: 40,
           },
         },
-        centeredSlides: 'true',
         mousewheel: false,
         keyboard: true,
         allowSlideNext: true,
