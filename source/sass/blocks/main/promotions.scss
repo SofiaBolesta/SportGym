@@ -1,13 +1,13 @@
 .promotions {
   width: 100%;
-  padding: 113px 60px 117px;
+  padding: 128px 60px 115px;
 
   @include vp-1023 {
     padding: 87px 45px 30px;
   }
 
   @include vp-767 {
-    padding: 35px 15px;
+    padding: 50px 15px;
   }
 }
 
@@ -34,13 +34,13 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 38px;
-    margin: 0 0 50px;
+    margin: 0 5px 42px 0;
   }
 }
 
 .promotions__container {
   display: grid;
-  grid-template-columns: repeat(2,minmax(auto,559px));
+  grid-template-columns: repeat(2, minmax(auto, 559px));
   grid-template-rows: 463px;
   gap: 40px;
 
@@ -74,7 +74,7 @@
   }
 
   @include vp-767 {
-    padding: 45px 50px;
+    padding: 37px 50px 44px;
     align-items: center;
   }
 }
@@ -107,7 +107,8 @@
   margin: 0;
 
   @include vp-767 {
-    margin: 0 0 40px;
+    margin: -6px 0 25px;
+    text-align: center;
   }
 }
 
@@ -128,6 +129,14 @@
   border-bottom: 1px solid #ffffff;
   padding: 10px 0 1px;
   margin: 0 0 6px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 0.1px 0.1px 5px #ffffff;
+  }
 
   @include vp-767 {
     position: inherit;
@@ -159,7 +168,7 @@
   flex-direction: column;
   padding: 27px 14px 28px 29px;
   border: 7px solid;
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   box-sizing: border-box;
 
   @include vp-1023 {
@@ -169,8 +178,9 @@
   }
 
   @include vp-767 {
-    padding: 46px 49px;
+    padding: 36px 37px 39px 40px;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -179,6 +189,10 @@
   font-size: 26px;
   color: #1c3374;
   margin: 0;
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 .promotions__item p {
@@ -193,7 +207,7 @@
   }
 
   @include vp-767 {
-    margin: 14px 0 16.5px;
+    margin: 12px 0 27.5px;
     text-align: center;
   }
 }
@@ -202,6 +216,10 @@
   @include vp-1023 {
     margin: 0 0 62.5px;
     width: 100%;
+  }
+
+  @include vp-767 {
+    margin: 14px -8px 26.5px 0;
   }
 }
 
@@ -214,6 +232,14 @@
   color: #1c3374;
   border-bottom: 1px solid #1c3374;
   align-self: flex-start;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 0.1px 0.1px 1px #1c3374;
+  }
 
   @include vp-767 {
     align-self: center;
@@ -224,4 +250,5 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  background-color: #4f86e5;
 }

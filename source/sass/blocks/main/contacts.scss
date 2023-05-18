@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    padding: 62px 15px 44px;
   }
 }
 
@@ -20,6 +20,10 @@
 
   @include vp-1023 {
     min-width: 500px;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
   }
 }
 
@@ -41,6 +45,7 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;
+    margin: 0 0 35px;
   }
 }
 
@@ -67,6 +72,30 @@
 
   @include vp-767 {
     border: none;
+  }
+}
+
+.contacts__item:first-child {
+  @include vp-767 {
+    order: 1;
+  }
+}
+
+.contacts__item:nth-child(-n + 2):not(:first-child) {
+  @include vp-767 {
+    order: 3;
+  }
+}
+
+.contacts__item:nth-child(n + 3):not(:last-child) {
+  @include vp-767 {
+    order: 2;
+  }
+}
+
+.contacts__item:last-child {
+  @include vp-767 {
+    order: 4;
   }
 }
 
@@ -104,5 +133,13 @@
   @include vp-767 {
     font-size: 18px;
     line-height: 27px;
+  }
+}
+
+.contacts__link {
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 0.1px 0.1px 1px #102654;
   }
 }

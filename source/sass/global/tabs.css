@@ -28,6 +28,8 @@
 .tabs__control.is-active {
   opacity: 1;
   pointer-events: none;
+  color: #102654;
+  border-bottom: 2px solid #d10a42;
 }
 
 .tabs__content {
@@ -44,10 +46,6 @@
 
 .tabs__element p {
   margin: 0;
-}
-
-.tabs__element p:not(:last-child) {
-  margin: 0 0 33px 0;
 }
 
 .tabs__element:nth-child(1) {

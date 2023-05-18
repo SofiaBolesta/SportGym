@@ -7,6 +7,7 @@ import {initCoachesSwiper} from './blog-slider';
 import {initReviewsSwiper} from './reviews-slide';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initPlayVideo} from './play-video';
+import {initMenuScroll} from './initMenuScroll';
 
 window.addEventListener('DOMContentLoaded', () => {
   initTabs();
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initCoachesSwiper();
   initReviewsSwiper();
   initPlayVideo();
+  initMenuScroll();
   window.addEventListener('load', () => {
     initModals();
     const form = new Form();
