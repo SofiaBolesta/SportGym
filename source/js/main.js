@@ -1,5 +1,4 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './vendor/iphone-inline-video';
 import './vendor/swiper';
@@ -17,7 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initPlayVideo();
   initMenuScroll();
   window.addEventListener('load', () => {
-    initModals();
     const form = new Form();
     window.form = form;
     form.init();
