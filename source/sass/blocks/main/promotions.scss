@@ -68,7 +68,7 @@
 .promotions__content {
   display: flex;
   flex-direction: column;
-  padding: 36px 46px 39px 45px;
+  padding: 34px 46px 39px 45px;
 
   @include vp-1199 {
     padding: 36px 44px 39px 45px;
@@ -199,7 +199,7 @@
 .promotions__item p {
   font-size: 16px;
   color: #1c3374;
-  margin: 6px 0 73.5px;
+  margin: 6px 0 71.5px;
 
   @include vp-1199 {
     margin: 12px 0 48.5px;
@@ -214,6 +214,8 @@
 }
 
 .promotions__item:last-child p {
+  margin: 9px 0 74.5px;
+
   @include vp-1199 {
     margin: 0 0 62.5px;
     width: 100%;

@@ -67,11 +67,15 @@
 }
 
 .card__content small {
-  margin: 0 0 55px;
+  margin: 0 0 68px;
   text-align: center;
   font-size: 16px;
   line-height: 150%;
   color: #495a7d;
+
+  @include vp-767 {
+    margin: 0 0 52px;
+  }
 }
 
 .card__price {
@@ -81,6 +85,7 @@
   position: relative;
   text-align: center;
   gap: 15px;
+  flex-wrap: wrap;
 
   @include vp-767 {
     gap: 8px;
@@ -123,6 +128,7 @@
   color: #102654;
   text-align: center;
   border: 2px solid #102654;
+  user-select: none;
 
   &:hover,
   &:focus,
@@ -156,14 +162,15 @@
   margin: 0;
   z-index: 0;
   top: -13px;
+  user-select: none;
 
   @include vp-1199 {
     top: -14px;
   }
 
   @include vp-767 {
-    top: -45px;
-    left: 5px;
+    top: -44px;
+    left: 15px;
     font-size: 80px;
     line-height: 150%;
   }

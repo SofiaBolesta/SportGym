@@ -44,7 +44,7 @@
   max-width: 1160px;
 
   @include vp-1199 {
-    max-width: 553px;
+    max-width: 567px;
   }
 
   @include vp-767 {
@@ -70,15 +70,21 @@
   overflow: hidden;
   text-align: center;
 
+  @include vp-1199 {
+    max-width: 286px;
+  }
+
   @include vp-767 {
-    min-height: 274px;
+    max-height: 275px;
   }
 }
 
 .coaches__slide-link {
-  display: block;
+  display: flex;
   width: 100%;
-  height: 256px;
+  height: 293px;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .coaches__slide-link .coaches__name {
@@ -88,6 +94,12 @@
   color: #ffffff;
   margin: 0 0 23px;
   user-select: none;
+  padding: 0 5px;
+
+  @include vp-1199 {
+    padding: 0 2px 0 8px;
+    margin: 0 0 21px;
+  }
 }
 
 .coaches__slide-link:hover .coaches__body {
@@ -134,7 +146,7 @@
   justify-content: start;
 
   @include vp-767 {
-    padding: 42.5px 26px 48px 38px;
+    padding: 44.5px 25px 48px 32px;
   }
 }
 
@@ -145,8 +157,12 @@
   text-align: center;
   margin: 0 0 10px;
 
+  @include vp-1199 {
+    margin: 0 0 12px;
+  }
+
   @include vp-767 {
-    margin: 0 13px 11px 0;
+    margin: 0 13px 9px 0;
   }
 }
 
@@ -155,8 +171,12 @@
   margin: 20px 0 0;
   text-align: left;
 
+  @include vp-1199 {
+    padding: 0 0 0 33px;
+  }
+
   @include vp-767 {
-    padding: 0 0 0 12px;
+    padding: 0 0 0 19px;
   }
 }
 
@@ -214,7 +234,7 @@
 
 .coaches__button-prev {
   position: absolute;
-  left: -4px;
+  left: -1px;
   color: #afafaf;
 
   &:hover,
@@ -223,14 +243,22 @@
     color: #5e5e5e;
   }
 
-  &::after {
-    font-size: 32px;
+  @include vp-767 {
+    left: -9px;
+  }
+}
+
+.coaches__button-prev:after {
+  font-size: 32px;
+
+  @include vp-767 {
+    font-size: 20px;
   }
 }
 
 .coaches__button-next {
   position: absolute;
-  right: -4px;
+  right: -1px;
   color: #afafaf;
 
   &:hover,
@@ -239,17 +267,27 @@
     color: #5e5e5e;
   }
 
-  &::after {
-    font-size: 32px;
+  @include vp-767 {
+    right: -8px;
+  }
+}
+
+.coaches__button-next:after {
+  font-size: 32px;
+
+  @include vp-767 {
+    font-size: 20px;
   }
 }
 
 .coaches__slide-link:focus .coaches__body {
-  @include vp-1199 {
-    right: 0;
-  }
+  right: 0;
+}
 
-  @include vp-767 {
-    right: 0;
+.coaches__slide-link:focus .coaches__name--hidden {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
   }
 }
