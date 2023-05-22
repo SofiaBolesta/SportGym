@@ -3,6 +3,7 @@ const picturePromo = document.querySelector('.promo__picture-video');
 const promoShadow = document.querySelector('.promo__shadow');
 const promoContainerButton = document.querySelector('.promo__container-button');
 const promoContainerVideo = document.querySelector('.promo__container-video');
+const iframeVideo = document.querySelector('.promo__video');
 
 export const initPlayVideo = () => {
   if (promoContainerVideo) {
@@ -10,6 +11,7 @@ export const initPlayVideo = () => {
       picturePromo.style.display = 'none';
       promoShadow.style.display = 'none';
       promoContainerButton.style.display = 'none';
+      iframeVideo.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
     });
   }
 };
