@@ -2,7 +2,7 @@
   padding: 0 0 0;
   margin-bottom: 38px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin-bottom: 43px;
   }
 
@@ -17,7 +17,7 @@
   height: 42px;
   border-bottom: 2.1px solid #dedfe2;
 
-  @include vp-1023 {
+  @include vp-1199 {
     display: flex;
     width: 51.3%;
     height: 39px;
@@ -57,7 +57,7 @@
     border-bottom: 2px solid #d10a42;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 0 0 37px;
     font-size: 18px;
     line-height: 150%;
@@ -71,7 +71,7 @@
 .tabs__control:not(:last-child) {
   margin: 0 45px 0 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin: 0 20px 0 0;
   }
 }
@@ -87,7 +87,7 @@
 }
 
 .tabs__sub-content {
-  @include vp-1023 {
+  @include vp-1199 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +95,7 @@
 }
 
 .tabs__element p:not(:last-child) {
-  @include vp-1023 {
+  @include vp-1199 {
     margin: 0 0 36px 0;
   }
 

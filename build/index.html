@@ -20,7 +20,7 @@
         <a href="#" class="header__logo">
           <picture>
             <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-            <source media="(max-width: 1023px)" srcset="img/svg/logo-tablet.svg">
+            <source media="(max-width: 1199px)" srcset="img/svg/logo-tablet.svg">
             <img src="img/svg/logo-desktop.svg" width="119" height="23" alt="Логотип фитнес центров">
           </picture>
         </a>
@@ -38,6 +38,9 @@
           <button class="header__button header__services" type="button">Купить абонемент</button>
         </div>
         <picture class="header__picture header__picture--mobile-hidden">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/header/superman-tablet@1x.webp, img/header/superman-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/header/superman@1x.webp, img/header/superman@2x.webp 2x">
+          <source media="(max-width: 1199px)" srcset="img/header/superman-tablet@1x.jpg 1x, img/header/superman-tablet@2x.jpg 2x">
           <source type="image/webp" srcset="img/header/superman@1x.webp, img/header/superman@2x.webp 2x">
           <img src="img/header/superman@1x.jpg" srcset="img/header/superman@2x.jpg" width="500" height="556" alt="Супермен">
         </picture>
@@ -60,10 +63,10 @@
           </div>
           <picture class="promo__picture">
             <source type="image/webp" media="(max-width: 767px)" srcset="img/main/promo/trainer-mobile@1x.webp, img/main/promo/trainer-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/main/promo/trainer-tablet@1x.webp, img/main/promo/trainer-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/main/promo/trainer-tablet@1x.webp, img/main/promo/trainer-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main/promo/trainer-desktop@1x.webp, img/main/promo/trainer-desktop@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/main/promo/trainer-mobile@1x.jpg 1x, img/main/promo/trainer-mobile@2x.jpg 2x">
-            <source media="(max-width: 1023px)" srcset="img/main/promo/trainer-tablet@1x.jpg 1x, img/main/promo/trainer-tablet@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/main/promo/trainer-tablet@1x.jpg 1x, img/main/promo/trainer-tablet@2x.jpg 2x">
             <img src="img/main/promo/trainer-desktop@1x.jpg" srcset="img/main/promo/trainer-desktop@2x.jpg" width="660" height="401" alt="Фотография тренажеров в фитнес центре">
           </picture>
         </div>
@@ -243,9 +246,9 @@
           </ul>
         </div>
         <picture class="services__picture">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/main/services/sports-pancaces-tablet@1x.webp, img/main/services/sports-pancaces-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/main/services/sports-pancaces-tablet@1x.webp, img/main/services/sports-pancaces-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/main/services/sports-pancaces-desktop@1x.webp, img/main/services/sports-pancaces-desktop@2x.webp 2x">
-          <source media="(max-width: 1023px)" srcset="img/main/services/sports-pancaces-tablet@1x.png 1x, img/main/services/sports-pancaces-tablet@2x.png 2x">
+          <source media="(max-width: 1199px)" srcset="img/main/services/sports-pancaces-tablet@1x.png 1x, img/main/services/sports-pancaces-tablet@2x.png 2x">
           <img src="img/main/services/sports-pancaces-desktop@1x.png" srcset="img/main/services/sports-pancaces-desktop@2x.png" width="287" height="494" alt="Фоновое изображение спортивного инвентаря">
         </picture>
       </div>
@@ -281,132 +284,148 @@
           <div class="coaches__swiper swiper">
             <div class="coaches__swiper-wrapper swiper-wrapper">
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Анна Павлова</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_1@1x.webp, img/main/coaches/coaches_1@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_1@1x.jpg" srcset="img/main/coaches/coaches_1@2x.jpg" width="260" height="294" alt="Фотография тренера Анны Павловой">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Анна Павлова</h3>
-                  <p>Гимнастика</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Заслуженный мастер спорта по спортивной гимнастики</li>
-                    <li>Опыт — 10 лет</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Анна Павлова</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_1@1x.webp, img/main/coaches/coaches_1@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_1@1x.jpg" srcset="img/main/coaches/coaches_1@2x.jpg" width="260" height="294" alt="Фотография тренера Анны Павловой">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Анна Павлова</h3>
+                    <p>Гимнастика</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Заслуженный мастер спорта по спортивной гимнастики</li>
+                      <li>Опыт — 10 лет</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Алексей Лавров</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_2@1x.webp, img/main/coaches/coaches_2@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_2@1x.jpg" srcset="img/main/coaches/coaches_2@2x.jpg" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Алексей Лавров</h3>
-                  <p>Триатлон</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Абсолютный чемпион России по триатлону</li>
-                    <li>Опыт — 3 года</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Алексей Лавров</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_2@1x.webp, img/main/coaches/coaches_2@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_2@1x.jpg" srcset="img/main/coaches/coaches_2@2x.jpg" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Алексей Лавров</h3>
+                    <p>Триатлон</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Абсолютный чемпион России по триатлону</li>
+                      <li>Опыт — 3 года</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Александр Пашков</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_3@1x.webp, img/main/coaches/coaches_3@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_3@1x.jpg" srcset="img/main/coaches/coaches_3@2x.jpg" width="260" height="294" alt="Фотография тренера Александра Пашкова">
-                </picture>
-                <div class="coaches__slide coaches__body">
-                  <h3 class="coaches__name">Александр Пашков</h3>
-                  <p>CrossFit</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по CrossFit </li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Александр Пашков</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_3@1x.webp, img/main/coaches/coaches_3@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_3@1x.jpg" srcset="img/main/coaches/coaches_3@2x.jpg" width="260" height="294" alt="Фотография тренера Александра Пашкова">
+                  </picture>
+                  <div class="coaches__slide coaches__body">
+                    <h3 class="coaches__name">Александр Пашков</h3>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit </li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Мария Кетова</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_4@1x.webp, img/main/coaches/coaches_4@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_4@1x.jpg" srcset="img/main/coaches/coaches_4@2x.jpg" width="260" height="294" alt="Фотография тренера Марии Кетовой">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Мария Кетова</h3>
-                  <p>Легкая атлетика</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Чемпион России по Легкой атлетики в дисциплине беговой спринт 2017 года</li>
-                    <li>Опыт — 7 лет</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Мария Кетова</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_4@1x.webp, img/main/coaches/coaches_4@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_4@1x.jpg" srcset="img/main/coaches/coaches_4@2x.jpg" width="260" height="294" alt="Фотография тренера Марии Кетовой">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Мария Кетова</h3>
+                    <p>Легкая атлетика</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Чемпион России по Легкой атлетики в дисциплине беговой спринт 2017 года</li>
+                      <li>Опыт — 7 лет</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Анна Павлова</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_1@1x.webp, img/main/coaches/coaches_1@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_1@1x.jpg" srcset="img/main/coaches/coaches_1@2x.jpg" width="260" height="294" alt="Фотография тренера Анны Павловой">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Анна Павлова</h3>
-                  <p>Гимнастика</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Заслуженный мастер спорта по спортивной гимнастики</li>
-                    <li>Опыт — 10 лет</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Анна Павлова</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_1@1x.webp, img/main/coaches/coaches_1@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_1@1x.jpg" srcset="img/main/coaches/coaches_1@2x.jpg" width="260" height="294" alt="Фотография тренера Анны Павловой">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Анна Павлова</h3>
+                    <p>Гимнастика</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Заслуженный мастер спорта по спортивной гимнастики</li>
+                      <li>Опыт — 10 лет</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Алексей Лавров</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_2@1x.webp, img/main/coaches/coaches_2@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_2@1x.jpg" srcset="img/main/coaches/coaches_2@2x.jpg" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Алексей Лавров</h3>
-                  <p>Триатлон</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Абсолютный чемпион России по триатлону</li>
-                    <li>Опыт — 3 года</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Алексей Лавров</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_2@1x.webp, img/main/coaches/coaches_2@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_2@1x.jpg" srcset="img/main/coaches/coaches_2@2x.jpg" width="260" height="294" alt="Фотография тренера Алексея Лаврова">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Алексей Лавров</h3>
+                    <p>Триатлон</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Абсолютный чемпион России по триатлону</li>
+                      <li>Опыт — 3 года</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Александр Пашков</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_3@1x.webp, img/main/coaches/coaches_3@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_3@1x.jpg" srcset="img/main/coaches/coaches_3@2x.jpg" width="260" height="294" alt="Фотография тренера Александра Пашкова">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Александр Пашков</h3>
-                  <p>CrossFit</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Победитель чемпионата России по CrossFit </li>
-                    <li>Опыт — 6 лет</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Александр Пашков</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_3@1x.webp, img/main/coaches/coaches_3@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_3@1x.jpg" srcset="img/main/coaches/coaches_3@2x.jpg" width="260" height="294" alt="Фотография тренера Александра Пашкова">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Александр Пашков</h3>
+                    <p>CrossFit</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit </li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
               <div class="coaches__slide swiper-slide">
-                <h3 class="coaches__name coaches__name--hidden">Мария Кетова</h3>
-                <picture class="coaches__picture">
-                  <source type="image/webp" srcset="img/main/coaches/coaches_4@1x.webp, img/main/coaches/coaches_4@2x.webp 2x">
-                  <img src="img/main/coaches/coaches_4@1x.jpg" srcset="img/main/coaches/coaches_4@2x.jpg" width="260" height="294" alt="Фотография тренера Марии Кетовой">
-                </picture>
-                <div class="coaches__body">
-                  <h3 class="coaches__name">Мария Кетова</h3>
-                  <p>Легкая атлетика</p>
-                  <ul>
-                    <li>Certified Level 3 Trainer</li>
-                    <li>Чемпион России по Легкой атлетики в дисциплине беговой спринт 2017 года</li>
-                    <li>Опыт — 7 лет</li>
-                  </ul>
-                </div>
+                <a class="coaches__slide-link">
+                  <h3 class="coaches__name coaches__name--hidden">Мария Кетова</h3>
+                  <picture class="coaches__picture">
+                    <source type="image/webp" srcset="img/main/coaches/coaches_4@1x.webp, img/main/coaches/coaches_4@2x.webp 2x">
+                    <img src="img/main/coaches/coaches_4@1x.jpg" srcset="img/main/coaches/coaches_4@2x.jpg" width="260" height="294" alt="Фотография тренера Марии Кетовой">
+                  </picture>
+                  <div class="coaches__body">
+                    <h3 class="coaches__name">Мария Кетова</h3>
+                    <p>Легкая атлетика</p>
+                    <ul>
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Чемпион России по Легкой атлетики в дисциплине беговой спринт 2017 года</li>
+                      <li>Опыт — 7 лет</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="coaches__button-prev swiper-button-prev"></div>
@@ -486,10 +505,10 @@
             </div>
             <picture class="promotions__picture">
               <source type="image/webp" media="(max-width: 767px)" srcset="img/main/promotions/promotions-mobile@1x.webp, img/main/promotions/promotions-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/main/promotions/promotions-tablet@1x.webp, img/main/promotions/promotions-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/main/promotions/promotions-tablet@1x.webp, img/main/promotions/promotions-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/main/promotions/promotions@1x.webp, img/main/promotions/promotions@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/main/promotions/promotions-mobile@1x.jpg 1x, img/main/promotions/promotions-mobile@2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/main/promotions/promotions-tablet@1x.jpg 1x, img/main/promotions/promotions-tablet@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/main/promotions/promotions-tablet@1x.jpg 1x, img/main/promotions/promotions-tablet@2x.jpg 2x">
               <img src="img/main/promotions/promotions@1x.jpg" srcset="img/main/promotions/promotions@2x.jpg" width="280" height="462" alt="Фотография тренера">
             </picture>
           </div>

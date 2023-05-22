@@ -2,7 +2,7 @@
   background-color: #030a1a;
   padding: 42px 60px 49px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 44px 44px 47px;
   }
 
@@ -19,7 +19,7 @@
   align-items: center;
   gap: 50px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     gap: 30px;
   }
 
@@ -34,7 +34,7 @@
 .footer__logo {
   margin: 9px 0 0 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 82px;
     margin: 1px 0 0 0;
   }
@@ -52,7 +52,7 @@
   list-style-type: none;
   gap: 18px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     gap: 10px;
   }
 
@@ -128,7 +128,7 @@
   list-style-type: none;
   gap: 11px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     gap: 6px;
   }
 

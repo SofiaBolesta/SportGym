@@ -15,7 +15,7 @@
   margin: 0 auto;
   padding: 120px 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 100px 0;
   }
 
@@ -33,7 +33,7 @@
   margin: 0 6px 18px 0;
   text-align: center;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-weight: 600;
     font-size: 42px;
     line-height: 50px;
@@ -54,7 +54,7 @@
   z-index: 0;
   margin: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     bottom: -130px;
   }
 
@@ -64,7 +64,7 @@
 }
 
 .services__picture img {
-  @include vp-1023 {
+  @include vp-1199 {
     width: 100%;
     height: 100%;
   }

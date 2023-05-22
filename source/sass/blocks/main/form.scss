@@ -3,7 +3,7 @@
   padding: 72px 40px 70px;
   background-color: #102654;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 62px 45px 69px;
   }
 
@@ -18,7 +18,7 @@
   height: 100%;
   margin: 0 auto;
 
-  @include vp-1023 {
+  @include vp-1199 {
     max-width: 503px;
   }
 }
@@ -32,7 +32,7 @@
   letter-spacing: 2.3px;
   line-height: 100%;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
     font-weight: 700;
@@ -57,7 +57,7 @@
   grid-template-rows: repeat(2, auto);
   gap: 26px 31px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 100%;
     max-width: 444px;
     gap: 30px 60px;

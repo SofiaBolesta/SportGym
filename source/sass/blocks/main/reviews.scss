@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 60px 120px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 64px 45px 50px;
   }
 
@@ -16,7 +16,7 @@
   min-width: 672px;
   margin: 0 auto;
 
-  @include vp-1023 {
+  @include vp-1199 {
     min-width: 100%;
   }
 }
@@ -30,7 +30,7 @@
   text-align: center;
   margin: 0 0 34px 10px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
     margin: 0 5px 39px 0;
@@ -65,7 +65,7 @@
   padding: 60px 60px 59px 62px;
   box-sizing: border-box;
 
-  @include vp-1023 {
+  @include vp-1199 {
     padding: 54px 64px 57px 65px;
     min-width: 83.5%;
     gap: 17px 28px;
@@ -89,7 +89,7 @@
   color: #ffffff;
   margin: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin: 2px 0 0 0;
   }
 
@@ -106,7 +106,7 @@
   color: #ffffff;
   margin: 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     line-height: 22px;
   }
 
@@ -127,7 +127,7 @@
   box-shadow: inset 0 0 0 1px #1c3374;
   margin: 6px 0 0 0;
 
-  @include vp-1023 {
+  @include vp-1199 {
     margin: 8px 0 0;
   }
 
@@ -158,7 +158,7 @@
     color: #5e5e5e;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     right: -6px;
   }
 
@@ -177,7 +177,7 @@
     color: #5e5e5e;
   }
 
-  @include vp-1023 {
+  @include vp-1199 {
     left: -6px;
   }
 

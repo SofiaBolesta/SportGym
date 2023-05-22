@@ -20,7 +20,7 @@
   color: #102654;
   margin: 0 0 49px 59px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
     text-align: center;
@@ -43,7 +43,7 @@
 .coaches__swiper {
   max-width: 1160px;
 
-  @include vp-1023 {
+  @include vp-1199 {
     max-width: 553px;
   }
 
@@ -75,16 +75,33 @@
   }
 }
 
-.coaches__slide .coaches__name {
+.coaches__slide-link {
+  display: block;
+  width: 100%;
+  height: 256px;
+}
+
+.coaches__slide-link .coaches__name {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
   margin: 0 0 23px;
+  user-select: none;
 }
 
-.coaches__slide:hover .coaches__body {
+.coaches__slide-link:hover .coaches__body {
   right: 0;
+
+  @include vp-1199 {
+    right: -100%;
+    pointer-events: none;
+  }
+
+  @include vp-767 {
+    right: -100%;
+    pointer-events: none;
+  }
 }
 
 .coaches__body .coaches__name {
@@ -92,8 +109,12 @@
   text-align: center;
 }
 
-.coaches__slide:hover .coaches__name--hidden {
+.coaches__slide-link:hover .coaches__name--hidden {
   display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
 }
 
 .coaches__body {
@@ -167,7 +188,7 @@
   z-index: -1;
   user-select: none;
 
-  @include vp-1023 {
+  @include vp-1199 {
     width: 268px;
     height: 294px;
   }
@@ -220,5 +241,15 @@
 
   &::after {
     font-size: 32px;
+  }
+}
+
+.coaches__slide-link:focus .coaches__body {
+  @include vp-1199 {
+    right: 0;
+  }
+
+  @include vp-767 {
+    right: 0;
   }
 }
