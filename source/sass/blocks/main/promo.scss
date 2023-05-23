@@ -187,6 +187,7 @@ p .promo__tablet {
 
   @include vp-767 {
     width: 100%;
+    align-self: center;
     height: auto;
   }
 }
