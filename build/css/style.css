@@ -2804,6 +2804,14 @@ button,
   user-select: none;
 }
 
+.card__icon-rublick--mobile {
+  display: none;
+}
+
+.card__icon-rublick--desktop {
+  display: block;
+}
+
 .tabs__controls {
   padding: 0 0 0;
   margin-bottom: 38px;
@@ -3211,10 +3219,6 @@ button,
   color: #5e5e5e;
 }
 
-.coaches__button-prev:after {
-  font-size: 32px;
-}
-
 .coaches__button-next {
   position: absolute;
   right: -1px;
@@ -3227,7 +3231,8 @@ button,
   color: #5e5e5e;
 }
 
-.coaches__button-next:after {
+.coaches__button-next::after,
+.coaches__button-prev::after {
   font-size: 32px;
 }
 
@@ -3742,10 +3747,6 @@ button,
   color: #5e5e5e;
 }
 
-.reviews__swiper-button-next:after {
-  font-size: 36px;
-}
-
 .reviews__swiper-button-prev {
   color: #afafaf;
   left: 33px;
@@ -3757,7 +3758,8 @@ button,
   color: #5e5e5e;
 }
 
-.reviews__swiper-button-prev:after {
+.reviews__swiper-button-prev::after,
+.reviews__swiper-button-next::after {
   font-size: 36px;
 }
 
@@ -4151,6 +4153,12 @@ button,
   }
 */
 
+@media (max-width: 1919px) {
+  .card__icon-rublick--desktop {
+    display: block;
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -4302,6 +4310,7 @@ button,
   .promo__container-button {
     width: 73px;
     height: 73px;
+    border-radius: 50%;
   }
 
   .promo__video-play {
@@ -4357,6 +4366,10 @@ button,
 
   .card__back {
     top: -14px;
+  }
+
+  .card__icon-rublick--mobile {
+    display: none;
   }
 
   .tabs__controls {
@@ -4572,7 +4585,7 @@ button,
     gap: 15px;
     -ms-grid-column-align: center;
     justify-self: center;
-    margin: 0px 2px 0 2px;
+    margin: 0 2px 0 2px;
   }
 
   .advantages__item--current p {
@@ -4938,6 +4951,12 @@ button,
     height: 167px;
   }
 
+  .promo__container-button {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+  }
+
   .services {
     padding: 35px 15px;
   }
@@ -4996,9 +5015,17 @@ button,
 
   .card__back {
     top: -44px;
-    left: 15px;
+    left: auto;
     font-size: 80px;
     line-height: 150%;
+  }
+
+  .card__icon-rublick--mobile {
+    display: block;
+  }
+
+  .card__icon-rublick--desktop {
+    display: none;
   }
 
   .tabs__controls {
@@ -5014,6 +5041,7 @@ button,
   .tabs__control {
     font-size: 16px;
     padding: 0 0 14px;
+    max-width: 90px;
   }
 
   .tabs__element p:not(:last-child) {
@@ -5110,15 +5138,12 @@ button,
     left: -9px;
   }
 
-  .coaches__button-prev:after {
-    font-size: 20px;
-  }
-
   .coaches__button-next {
     right: -8px;
   }
 
-  .coaches__button-next:after {
+  .coaches__button-next::after,
+  .coaches__button-prev::after {
     font-size: 20px;
   }
 
@@ -5365,15 +5390,12 @@ button,
     right: -7px;
   }
 
-  .reviews__swiper-button-next:after {
-    font-size: 20px;
-  }
-
   .reviews__swiper-button-prev {
     left: -7px;
   }
 
-  .reviews__swiper-button-prev:after {
+  .reviews__swiper-button-prev::after,
+  .reviews__swiper-button-next::after {
     font-size: 20px;
   }
 

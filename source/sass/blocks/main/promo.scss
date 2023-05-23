@@ -226,6 +226,13 @@ p .promo__tablet {
   @include vp-1199 {
     width: 73px;
     height: 73px;
+    border-radius: 50%;
+  }
+
+  @include vp-767 {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
   }
 }
 
