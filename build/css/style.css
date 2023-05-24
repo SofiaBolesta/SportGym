@@ -2804,13 +2804,29 @@ button,
   user-select: none;
 }
 
-.card__icon-rublick--mobile {
+/*.card__icon-rublick--mobile {
   display: none;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .card__icon-rublick--desktop {
   display: block;
-}
+
+  @include vp-1919 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}*/
 
 .tabs__controls {
   padding: 0 0 0;
@@ -3116,11 +3132,6 @@ button,
   right: 0;
 }
 
-.coaches__body .coaches__name {
-  margin: 0 13px -3px 0;
-  text-align: center;
-}
-
 .coaches__slide-link:hover .coaches__name--hidden {
   display: none;
 }
@@ -3152,6 +3163,14 @@ button,
   justify-content: start;
 }
 
+.coaches__body h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 13px -3px 0;
+  text-align: center;
+}
+
 .coaches__body p {
   font-size: 16px;
   line-height: 150%;
@@ -3161,7 +3180,7 @@ button,
 }
 
 .coaches__body ul {
-  padding: 0 0 0 33px;
+  padding: 0 0 0 27px;
   margin: 20px 0 0;
   text-align: left;
 }
@@ -4153,12 +4172,6 @@ button,
   }
 */
 
-@media (max-width: 1919px) {
-  .card__icon-rublick--desktop {
-    display: block;
-  }
-}
-
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -4366,10 +4379,6 @@ button,
 
   .card__back {
     top: -14px;
-  }
-
-  .card__icon-rublick--mobile {
-    display: none;
   }
 
   .tabs__controls {
@@ -5013,6 +5022,7 @@ button,
   .card__icon-rublick {
     width: 24px;
     height: 33px;
+    background-size: 33px 24px;
   }
 
   .card__button {
@@ -5026,14 +5036,6 @@ button,
     left: auto;
     font-size: 80px;
     line-height: 150%;
-  }
-
-  .card__icon-rublick--mobile {
-    display: block;
-  }
-
-  .card__icon-rublick--desktop {
-    display: none;
   }
 
   .tabs__controls {

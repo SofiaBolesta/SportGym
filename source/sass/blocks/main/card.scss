@@ -113,6 +113,7 @@
   @include vp-767 {
     width: 24px;
     height: 33px;
+    background-size: 33px 24px;
   }
 }
 
@@ -176,7 +177,7 @@
   }
 }
 
-.card__icon-rublick--mobile {
+/*.card__icon-rublick--mobile {
   display: none;
 
   @include vp-1199 {
@@ -198,4 +199,4 @@
   @include vp-767 {
     display: none;
   }
-}
+}*/
