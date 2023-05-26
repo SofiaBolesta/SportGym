@@ -3119,7 +3119,7 @@ button,
 }
 @media (max-width: 767px) {
   .card__content small {
-    margin: 0 0 52px;
+    margin: 0 0 54px;
   }
 }
 
@@ -3303,7 +3303,7 @@ button,
 @media (max-width: 767px) {
   .tabs__block {
     width: 100%;
-    height: 45px;
+    height: 39px;
   }
 }
 
@@ -3347,7 +3347,7 @@ button,
     font-size: 16px;
     max-width: 90px;
     margin: 0;
-    padding: 0 0 20px;
+    padding: 0 0 14px;
   }
 }
 
@@ -3406,7 +3406,7 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__element p:not(:last-child) {
-    margin: 0 0 32px 0;
+    margin: 0 0 31px;
   }
 }
 
@@ -3421,7 +3421,7 @@ button,
 }
 @media (max-width: 767px) {
   .blog {
-    padding: 33px 15px 37px;
+    padding: 70px 15px 33px;
   }
 }
 
@@ -5458,7 +5458,7 @@ button,
 
 .footer {
   background-color: #030a1a;
-  padding: 42px 60px 49px;
+  padding: 0 60px;
 }
 @media (max-width: 1199px) {
   .footer {
