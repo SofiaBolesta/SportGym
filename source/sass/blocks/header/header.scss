@@ -1,10 +1,13 @@
 .header {
   width: 100%;
-  padding-bottom: 48px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+
+.header__wrapper {
+  padding-bottom: 48px;
 
   @include vp-1199 {
-    padding-bottom: 73px;
+    padding-bottom: 75px;
   }
 
   @include vp-767 {
