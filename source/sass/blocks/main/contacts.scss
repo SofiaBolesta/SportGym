@@ -1,6 +1,6 @@
 .contacts {
   width: 100%;
-  padding: 56px 40px 34px;
+  padding: 56px 40px 34px 121px;
   border-top: 1px solid #102654;
 
   @include vp-1199 {
@@ -16,14 +16,17 @@
   max-width: 439px;
   padding: 0;
   height: 100%;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-right: auto;
 
   @include vp-1199 {
     min-width: 500px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
     min-width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -55,15 +58,18 @@
   grid-template-rows: repeat(2, auto);
   margin: 0;
   gap: 0 60px;
+  padding: 0 0 0 2px;
 
   @include vp-1199 {
     grid-template-columns: 266px auto;
     gap: 0 47px;
+    padding: 0;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 }
 
