@@ -49,10 +49,10 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 226px auto;
-  grid-template-rows: repeat(1, minmax(auto, 161px)) repeat(1, minmax(auto, 146px)) repeat(auto-fit, minmax(auto, 161px));
+  grid-template-rows: repeat(1, minmax(auto, 161px)) repeat(1, minmax(auto, 146px)) repeat(auto-fit, auto);
   padding: 0;
   list-style-type: none;
-  gap: 0 63px;
+  gap: 10px 63px;
 
   @include vp-1199 {
     grid-template-columns: repeat(2, auto);

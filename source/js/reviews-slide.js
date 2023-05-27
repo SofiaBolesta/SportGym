@@ -1,9 +1,9 @@
 import Swiper from '../js/vendor/swiper.js';
 /* import swiper from "vendor/swiper";*/
-const coachesSwiper = document.querySelector('.reviews__swiper');
+const reviewsSwiper = document.querySelector('.reviews__swiper');
 
 export const initReviewsSwiper = () => {
-  if (coachesSwiper) {
+  if (reviewsSwiper) {
     (() =>
       new Swiper('.reviews__swiper', {
         direction: 'horizontal',

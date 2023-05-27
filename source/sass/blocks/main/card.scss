@@ -1,12 +1,13 @@
 .card {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(auto-fit, auto);
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
 
   @include vp-1199 {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(auto-fit, auto);
     gap: 44px;
   }
 
