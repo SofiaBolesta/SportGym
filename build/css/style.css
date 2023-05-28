@@ -4392,6 +4392,7 @@ button,
 
   .tabs__control:not(:last-child) {
     margin: 0 21px 0 0;
+    padding: 0 0 13px;
   }
 
   .tabs__sub-content {
@@ -5063,6 +5064,7 @@ button,
 
   .tabs__control:not(:last-child) {
     margin: 0;
+    padding: 0 0 13px 0;
   }
 
   .tabs__control:last-child {
