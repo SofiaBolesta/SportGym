@@ -3,7 +3,7 @@
   padding: 122px 60px 106px;
 
   @include vp-1199 {
-    padding: 106px 45px 100px;
+    padding: 105px 45px 100px;
   }
 
   @include vp-767 {
@@ -37,7 +37,7 @@
   gap: 0 61.48px;
 
   @include vp-1199 {
-    padding: 46px 32.5px 41.5px 46.5px;
+    padding: 46px 38.5px 41.5px 47.5px;
     align-items: center;
     gap: 0 25px;
   }
@@ -119,7 +119,7 @@
 }
 
 .blog__list dd {
-  margin: 1px 0 11px;
+  margin: -1px 0 40px;
   font-family: "Roboto Condensed-Bold", "Arial", sans-serif;
   font-size: 40px;
   line-height: 150%;
@@ -127,15 +127,16 @@
   display: flex;
   align-items: center;
   height: 28px;
-  gap: 7px;
-  padding: 0;
+  gap: 5px;
   border-top: 1px solid #ffffff;
   width: fit-content;
+  padding: 19px 0 0 0;
 
   @include vp-1199 {
     font-size: 24px;
     margin: 1px 0 8px;
     gap: 3px;
+    padding: 5px 0 0 0;
   }
 
   @include vp-767 {
@@ -146,14 +147,17 @@
 
 .blog__list dd:last-child {
   margin: 0;
+  padding: 21px 0 0;
   letter-spacing: -1.5px;
 
   @include vp-1199 {
     margin: -1px 0 0;
+    padding: 4px 0 0;
     letter-spacing: -0.8px;
   }
 
   @include vp-767 {
+    padding: 0;
     margin: 3px 0 0;
   }
 }
@@ -199,7 +203,7 @@
   @include vp-1199 {
     font-size: 10px;
     padding: 10px 0;
-    margin: 0 5px 5.5px -3px;
+    margin: 0 0 5.5px -5px;
   }
 
   @include vp-767 {

@@ -3,7 +3,6 @@
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(auto-fit, auto);
   gap: 40px;
-  justify-content: space-between;
 
   @include vp-1199 {
     grid-template-columns: repeat(1, auto);

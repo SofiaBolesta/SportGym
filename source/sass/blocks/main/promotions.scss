@@ -1,13 +1,13 @@
 .promotions {
   width: 100%;
-  padding: 128px 60px 115px;
+  padding: 102px 60px 115px;
 
   @include vp-1199 {
     padding: 87px 45px 30px;
   }
 
   @include vp-767 {
-    padding: 50px 15px;
+    padding: 15px 15px 50px;
   }
 }
 
@@ -40,7 +40,7 @@
 
 .promotions__container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 559px));
+  grid-template-columns: repeat(2, minmax(auto, 561px));
   grid-template-rows: repeat(auto-fit, auto);
   gap: 40px;
 
@@ -74,10 +74,10 @@
 .promotions__content {
   display: flex;
   flex-direction: column;
-  padding: 34px 46px 39px 45px;
+  padding: 34px 46px 45px 45px;
 
   @include vp-1199 {
-    padding: 36px 44px 39px 45px;
+    padding: 36px 44px 44px 45px;
   }
 
   @include vp-767 {
@@ -163,7 +163,7 @@
   @include vp-1199 {
     grid-column: 1/-1;
     grid-row: 2;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 47.8%);
     justify-content: stretch;
     gap: 30px;
   }
@@ -177,7 +177,7 @@
 .promotions__item {
   display: flex;
   flex-direction: column;
-  padding: 27px 14px 28px 29px;
+  padding: 26px 20px 28px 27px;
   border: 7px solid;
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   box-sizing: border-box;
@@ -209,30 +209,28 @@
 .promotions__item p {
   font-size: 16px;
   color: #1c3374;
-  margin: 6px 0 10px;
+  margin: 9px 0 7px;
 
   @include vp-1199 {
-    margin: 12px 0 10px;
+    margin: 12px 0 48px;
     line-height: 22px;
     width: 163px;
   }
 
   @include vp-767 {
-    margin: 12px 0 10px;
+    margin: 12px 0 27px;
     text-align: center;
   }
 }
 
 .promotions__item:last-child p {
-  margin: 9px 0 10px;
-
   @include vp-1199 {
-    margin: 0 0 10px;
+    margin: 10px 0 5px;
     width: 100%;
   }
 
   @include vp-767 {
-    margin: 14px -8px 10px 0;
+    margin: 14px 1px 27px 0;
   }
 }
 

@@ -70,10 +70,14 @@
 .advantages__item {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto-fit, minmax(161px, auto));
   gap: 0 30px;
   height: 100%;
   align-content: stretch;
+
+  @include vp-1199 {
+    grid-template-rows: repeat(auto-fit, minmax(84px, auto));
+  }
 
   @include vp-767 {
     display: flex;
@@ -102,7 +106,7 @@
 
   @include vp-767 {
     align-items: center;
-    margin: 32px 0 0;
+    margin: 0 0 45px;
     padding: 0 45px;
   }
 }
@@ -199,10 +203,14 @@
 
 .advantages__item:nth-child(n + 3):not(.advantages__item--current) h3 {
   margin: 0 0 7px;
+
+  @include vp-1199 {
+    margin: 0 0 -4px;
+  }
 }
 
 .advantages__item:nth-child(n + 3):not(.advantages__item--current) .advantages__number {
-  margin: 0 0 -13px;
+  margin: 0 16px 12px -1px;
 
   @include vp-1199 {
     margin: 0 0 22px;
@@ -222,7 +230,7 @@
 }
 
 .advantages__item:last-child:not(.advantages__item--current) .advantages__number {
-  margin: 0 0 0 10px;
+  margin: 0 0 13px 9px;
 
   @include vp-1199 {
     margin: 0 0 22px -1px;
@@ -257,7 +265,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin: 7px -17px 0 3px;
+  max-height: 306px;
+  margin: -32px -14px 19px 2px;
+  align-self: end;
+  overflow-y: scroll;
 
   @include vp-1199 {
     grid-row: 2;
@@ -273,7 +284,9 @@
     padding: 19px 0;
     width: 100%;
     gap: 15px;
-    margin: 16px 0 0;
+    align-self: center;
+    max-height: 240px;
+    margin: 25px 0 21px;
   }
 }
 
