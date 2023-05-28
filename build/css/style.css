@@ -3271,7 +3271,7 @@ button,
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 15px;
-    min-height: 57px;
+    height: 57px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -3344,12 +3344,12 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .tabs__control:last-child {
+  .tabs__control--last-child {
     padding: 0 0 13px;
   }
 }
 @media (max-width: 767px) {
-  .tabs__control:last-child {
+  .tabs__control--last-child {
     padding: 0 0 13px;
     margin: 0;
   }
