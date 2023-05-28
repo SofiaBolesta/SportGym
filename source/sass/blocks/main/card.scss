@@ -152,7 +152,7 @@
 
   @include vp-767 {
     line-height: 14px;
-    margin: 0 -7px 0 -8px;
+    margin: 0 -22px 0 -22px;
     padding: 24px 0;
   }
 }
@@ -180,27 +180,3 @@
     line-height: 150%;
   }
 }
-
-/*.card__icon-rublick--mobile {
-  display: none;
-
-  @include vp-1199 {
-    display: none;
-  }
-
-  @include vp-767 {
-    display: block;
-  }
-}
-
-.card__icon-rublick--desktop {
-  display: block;
-
-  @include vp-1919 {
-    display: block;
-  }
-
-  @include vp-767 {
-    display: none;
-  }
-}*/

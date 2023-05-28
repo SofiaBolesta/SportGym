@@ -2805,30 +2805,6 @@ button,
   user-select: none;
 }
 
-/*.card__icon-rublick--mobile {
-  display: none;
-
-  @include vp-1199 {
-    display: none;
-  }
-
-  @include vp-767 {
-    display: block;
-  }
-}
-
-.card__icon-rublick--desktop {
-  display: block;
-
-  @include vp-1919 {
-    display: block;
-  }
-
-  @include vp-767 {
-    display: none;
-  }
-}*/
-
 .tabs__controls {
   padding: 0 0 0;
   margin-bottom: 38px;
@@ -4402,19 +4378,20 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 39px;
+    gap: 15px;
+    min-height: 39.5px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .tabs__control {
-    padding: 0 0 11px;
+    padding: 0 0 13px;
     font-size: 18px;
     line-height: 150%;
   }
 
   .tabs__control:not(:last-child) {
-    margin: 0 10px 0 0;
+    margin: 0 21px 0 0;
   }
 
   .tabs__sub-content {
@@ -4435,7 +4412,7 @@ button,
   }
 
   .blog {
-    padding: 105px 45px 100px;
+    padding: 102px 45px 100px;
   }
 
   .blog__wrapper {
@@ -4610,7 +4587,7 @@ button,
     grid-row: 2;
     grid-column: 1/-1;
     padding: 12px 135px 39px;
-    gap: 15px;
+    gap: 37px;
     -ms-grid-column-align: center;
     justify-self: center;
     margin: 0 2px 0 2px;
@@ -4623,6 +4600,7 @@ button,
 
   .advantages__number--current p {
     margin: 0 0 -3px 0;
+    font-size: 74px;
   }
 
   .advantages__number--current span {
@@ -4636,7 +4614,7 @@ button,
   .promotions__title {
     font-size: 42px;
     line-height: 50px;
-    margin: 0 9px 40px 0;
+    margin: 0 9px 43px 0;
   }
 
   .promotions__container {
@@ -5055,7 +5033,7 @@ button,
 
   .card__button {
     line-height: 14px;
-    margin: 0 -7px 0 -8px;
+    margin: 0 -22px 0 -22px;
     padding: 24px 0;
   }
 
@@ -5067,7 +5045,7 @@ button,
   }
 
   .tabs__controls {
-    margin-bottom: 23px;
+    margin-bottom: 9px;
     padding: 0;
   }
 
@@ -5078,9 +5056,9 @@ button,
 
   .tabs__control {
     font-size: 16px;
-    max-width: 90px;
+    max-width: 78px;
     margin: 0;
-    padding: 0 0 14px;
+    padding: 0 0 13px 0;
   }
 
   .tabs__control:not(:last-child) {
@@ -5096,7 +5074,7 @@ button,
   }
 
   .blog {
-    padding: 33px 15px 33px;
+    padding: 17px 15px 33px;
   }
 
   .blog__wrapper {
@@ -5305,7 +5283,7 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     max-height: 240px;
-    margin: 25px 0 21px;
+    margin: 25px 0 27px;
   }
 
   .advantages__item--current p {
