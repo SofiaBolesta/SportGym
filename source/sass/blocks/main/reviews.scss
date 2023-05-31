@@ -61,6 +61,8 @@
   background: #1c3374;
   box-shadow: 0 0 40px 0 rgba(#1c3374, 0.2);
   min-width: 560px;
+  max-height: 243px;
+  overflow: auto;
   max-width: 75%;
   padding: 57px 60px 59px 62px;
   box-sizing: border-box;
@@ -79,6 +81,7 @@
     justify-items: center;
     max-width: 80%;
     min-width: 225px;
+    max-height: 335px;
   }
 }
 

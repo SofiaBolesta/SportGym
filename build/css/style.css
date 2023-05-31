@@ -3697,6 +3697,8 @@ button,
   -webkit-box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
   min-width: 560px;
+  max-height: 243px;
+  overflow: auto;
   max-width: 75%;
   padding: 57px 60px 59px 62px;
   -webkit-box-sizing: border-box;
@@ -5416,6 +5418,7 @@ button,
     justify-items: center;
     max-width: 80%;
     min-width: 225px;
+    max-height: 335px;
   }
 
   .reviews__swiper-content h3 {
