@@ -5013,7 +5013,7 @@ button,
   }
 
   .services__wrapper {
-    padding: 57px 0 65px;
+    padding: 65px 0 65px;
   }
 
   .services__title {
@@ -5319,7 +5319,8 @@ button,
   }
 
   .advantages__number--current p {
-    margin: 0 0 -6px;
+    margin: 0 0 -29px;
+    font-size: 74px;
   }
 
   .advantages__number--current span {
