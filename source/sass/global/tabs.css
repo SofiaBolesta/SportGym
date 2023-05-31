@@ -74,23 +74,10 @@
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 1023px) {
-  .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .tabs__controls {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
   }
 
   .tabs__element {

@@ -2494,10 +2494,13 @@ button,
 }
 
 .promo__content-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 85px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2557,7 +2560,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: -121px 0 0 77px;
+  margin: -120px -79px -1px 0;
 }
 
 .promo__video {
@@ -2894,6 +2897,7 @@ button,
   background-color: #ed0233;
   padding: 85px 73px 87px 78px;
   gap: 0 61.48px;
+  max-width: 500px;
 }
 
 .blog__content h2 {
@@ -3013,9 +3017,17 @@ button,
   box-shadow: 1.5px 1.5px 5px #ffffff;
 }
 
+.blog__picture {
+  margin: 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .blog__picture img {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #010246;
@@ -3047,7 +3059,7 @@ button,
 }
 
 .coaches__swiper {
-  max-width: 1160px;
+  max-width: 90%;
 }
 
 .coaches__swiper-wrapper {
@@ -3069,8 +3081,7 @@ button,
   -ms-flex-pack: end;
   justify-content: end;
   z-index: 1;
-  max-width: 260px;
-  min-height: 253px;
+  width: 22.2222222222%;
   height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3079,11 +3090,12 @@ button,
 }
 
 .coaches__slide-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 293px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(274px, auto);
+  grid-template-rows: minmax(274px, auto);
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -3093,11 +3105,12 @@ button,
 }
 
 .coaches__slide-link .coaches__name {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
-  margin: 0 0 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3181,17 +3194,16 @@ button,
 }
 
 .coaches__picture {
-  width: 268px;
-  height: 294px;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .coaches__picture img {
@@ -3242,7 +3254,7 @@ button,
 
 .advantages {
   width: 100%;
-  padding: 116px 60px 120px;
+  padding: 121px 60px 120px;
   background-color: #f8f9fc;
 }
 
@@ -3279,7 +3291,8 @@ button,
   display: grid;
   -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(auto-fit, minmax(161px, auto));
+  -ms-grid-rows: minmax(161px, auto);
+  grid-template-rows: minmax(161px, auto);
   gap: 0 30px;
   height: 100%;
   -ms-flex-line-pack: stretch;
@@ -3996,10 +4009,14 @@ button,
 }
 
 .contacts__link {
+  font-size: 18px;
+  color: #102654;
+  display: block;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  max-width: 128px;
 }
 
 .contacts__link:hover,
@@ -4022,9 +4039,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   gap: 40px;
   padding: 42px 0 49px;
 }
@@ -4046,7 +4060,8 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 34px;
+  gap: 10px 34px;
+  max-width: 465px;
 }
 
 .footer__link {
@@ -4238,6 +4253,10 @@ button,
     padding: 101px 45px 100px;
   }
 
+  .promo__wrapper {
+    display: block;
+  }
+
   .promo__content-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4395,7 +4414,7 @@ button,
     padding: 0 0 10px;
   }
 
-  .tabs__control--last-child {
+  .tabs__control:last-child {
     padding: 0 0 10px;
   }
 
@@ -4485,17 +4504,19 @@ button,
     margin: 0 6px 31px 0;
   }
 
-  .coaches__swiper {
-    max-width: 567px;
+  .coaches__slide {
+    width: 50%;
   }
 
-  .coaches__slide {
-    max-width: 286px;
+  .coaches__slide-link {
+    -ms-grid-rows: 295px;
+    grid-template-rows: 295px;
+    -ms-grid-columns: 260px;
+    grid-template-columns: 260px;
   }
 
   .coaches__slide-link .coaches__name {
     padding: 0 2px 0 8px;
-    margin: 0 0 21px;
   }
 
   .coaches__slide-link:hover .coaches__body {
@@ -4515,9 +4536,12 @@ button,
     padding: 0 0 0 33px;
   }
 
-  .coaches__picture {
-    width: 268px;
-    height: 294px;
+  .coaches__picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .coaches__slide-link:focus .coaches__name--hidden {
@@ -4543,7 +4567,8 @@ button,
   }
 
   .advantages__item {
-    grid-template-rows: repeat(auto-fit, minmax(84px, auto));
+    -ms-grid-rows: minmax(84px, auto);
+    grid-template-rows: minmax(84px, auto);
   }
 
   .advantages__item:nth-child(-n+2) {
@@ -4796,7 +4821,7 @@ button,
 
   .footer__logo {
     width: 82px;
-    margin: 1px 0 0 0;
+    margin: 4px 0 0 0;
   }
 
   .footer__list {
@@ -4811,13 +4836,6 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
   }
 }
 
@@ -4917,6 +4935,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
   }
 
   .promo__content-container {
@@ -4925,6 +4944,8 @@ button,
 
   .promo__description {
     padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .promo__description h2 {
@@ -5071,7 +5092,7 @@ button,
     padding: 0 0 13px 0;
   }
 
-  .tabs__control--last-child {
+  .tabs__control:last-child {
     padding: 0 0 13px;
     margin: 0;
   }
@@ -5122,6 +5143,11 @@ button,
     margin: 0;
   }
 
+  .blog__picture {
+    width: 100%;
+    margin: 0;
+  }
+
   .coaches {
     padding: 29px 15px 35px;
   }
@@ -5129,15 +5155,19 @@ button,
   .coaches__title {
     font-size: 32px;
     line-height: 38px;
-    margin: 0 5px 43px 0;
-  }
-
-  .coaches__swiper {
-    max-width: 226px;
+    margin: 0 5px 37px 0;
   }
 
   .coaches__slide {
-    max-height: 275px;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .coaches__slide-link {
+    -ms-grid-rows: minmax(274px, auto);
+    grid-template-rows: minmax(274px, auto);
+    -ms-grid-columns: 90%;
+    grid-template-columns: 90%;
   }
 
   .coaches__slide-link:hover .coaches__body {
@@ -5155,17 +5185,6 @@ button,
 
   .coaches__body ul {
     padding: 0 0 0 25px;
-  }
-
-  .coaches__picture {
-    width: 226px;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  .coaches__picture img {
-    height: 100%;
   }
 
   .coaches__button-prev {
@@ -5186,7 +5205,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 65px 0;
+    padding: 70px 0 65px;
   }
 
   .advantages__title {
@@ -5395,7 +5414,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     justify-items: center;
-    max-width: 226px;
+    max-width: 80%;
     min-width: 225px;
   }
 
@@ -5414,8 +5433,8 @@ button,
     grid-row: 1;
     width: 68px;
     height: 68px;
-    -ms-grid-column-align: end;
-    justify-self: end;
+    -ms-grid-column-align: center;
+    justify-self: center;
     -ms-grid-row-align: start;
     align-self: start;
     margin: 0;
@@ -5547,7 +5566,7 @@ button,
     -ms-grid-rows: (auto)[3];
     grid-template-rows: repeat(3, auto);
     gap: 21px 0;
-    padding: 50px 0 50px;
+    padding: 48px 0 50px;
     justify-items: stretch;
   }
 
@@ -5618,12 +5637,6 @@ button,
   .tabs__controls {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
   }
 
   .tabs__element {

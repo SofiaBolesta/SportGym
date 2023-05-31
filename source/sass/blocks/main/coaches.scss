@@ -30,7 +30,7 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 38px;
-    margin: 0 5px 43px 0;
+    margin: 0 5px 37px 0;
   }
 }
 
@@ -41,15 +41,7 @@
 }
 
 .coaches__swiper {
-  max-width: 1160px;
-
-  @include vp-1199 {
-    max-width: 567px;
-  }
-
-  @include vp-767 {
-    max-width: 226px;
-  }
+  max-width: 90%;
 }
 
 .coaches__swiper-wrapper {
@@ -63,42 +55,52 @@
   flex-direction: column;
   justify-content: end;
   z-index: 1;
-  max-width: 260px;
-  min-height: 253px;
+  width: calc(100% / 4.5);
   height: 100%;
   box-sizing: border-box;
   overflow: hidden;
   text-align: center;
 
   @include vp-1199 {
-    max-width: 286px;
+    width: calc(100% / 2);
   }
 
   @include vp-767 {
-    max-height: 275px;
+    width: 100%;
+    margin-left: 10px;
   }
 }
 
 .coaches__slide-link {
-  display: flex;
-  width: 100%;
-  height: 293px;
+  display: grid;
+  grid-template-rows: minmax(274px, auto);
+  grid-template-columns: 100%;
   align-items: flex-end;
   justify-content: center;
+
+  @include vp-1199 {
+    grid-template-rows: 295px;
+    grid-template-columns: 260px;
+  }
+
+  @include vp-767 {
+    grid-template-rows: minmax(274px, auto);
+    grid-template-columns: 90%;
+  }
 }
 
 .coaches__slide-link .coaches__name {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
-  margin: 0 0 22px;
   user-select: none;
   padding: 0 5px;
 
   @include vp-1199 {
     padding: 0 2px 0 8px;
-    margin: 0 0 21px;
   }
 }
 
@@ -202,25 +204,12 @@
 }
 
 .coaches__picture {
-  width: 268px;
-  height: 294px;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   user-select: none;
-
-  @include vp-1199 {
-    width: 268px;
-    height: 294px;
-  }
-
-  @include vp-767 {
-    width: 226px;
-    height: 100%;
-    object-fit: cover;
-  }
+  object-fit: cover;
 }
 
 .coaches__picture img {
@@ -230,8 +219,11 @@
   object-fit: cover;
   background-color: #c4cbd7;
 
-  @include vp-767 {
-    height: 100%;
+  @include vp-1199 {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 

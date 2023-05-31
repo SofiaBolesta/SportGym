@@ -35,6 +35,7 @@
   background-color: #ed0233;
   padding: 85px 73px 87px 78px;
   gap: 0 61.48px;
+  max-width: 500px;
 
   @include vp-1199 {
     padding: 46px 38.5px 41.5px 47.5px;
@@ -211,9 +212,20 @@
   }
 }
 
+.blog__picture {
+  margin: 0;
+  align-self: center;
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .blog__picture img {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0;
   object-fit: cover;
   background-color: #010246;
 }

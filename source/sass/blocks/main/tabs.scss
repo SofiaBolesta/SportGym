@@ -88,7 +88,7 @@
   }
 }
 
-.tabs__control--last-child {
+.tabs__control:last-child {
   @include vp-1199 {
     padding: 0 0 10px;
   }

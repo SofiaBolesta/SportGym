@@ -145,7 +145,11 @@
 }
 
 .contacts__link {
+  font-size: 18px;
+  color: #102654;
+  display: block;
   user-select: none;
+  max-width: 128px;
 
   &:hover,
   &:focus,
