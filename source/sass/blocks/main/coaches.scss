@@ -270,6 +270,10 @@
 
 .coaches__slide-link:focus .coaches__body {
   right: 0;
+
+  @include vp-767 {
+    right: 0;
+  }
 }
 
 .coaches__slide-link:focus .coaches__name--hidden {
