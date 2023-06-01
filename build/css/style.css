@@ -2925,7 +2925,7 @@ button,
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
-  margin: 0 0 21px 0;
+  margin: -11px 0 4px;
 }
 
 .blog__list {
@@ -3428,6 +3428,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 0;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
@@ -3977,20 +3978,23 @@ button,
   color: #102654;
 }
 
-.contacts__list {
+.contacts__list-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: 234px auto;
+  grid-template-columns: 234px auto;
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
-  margin: 0;
-  gap: 0 60px;
-  padding: 0 0 0 2px;
+  gap: 0 63px;
 }
 
-.contacts__item:nth-child(-n+3):not(:nth-child(2n)) {
+.contacts__list-first {
+  margin: 0 0 0 3px;
   border-right: 1px solid #74819c;
+}
+
+.contacts__list-last {
+  margin: 0;
 }
 
 .contacts__item dt {
@@ -4009,14 +4013,14 @@ button,
 }
 
 .contacts__link {
-  font-size: 18px;
+  font-size: 14px;
   color: #102654;
   display: block;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  max-width: 128px;
+  max-width: 102px;
 }
 
 .contacts__link:hover,
@@ -4446,7 +4450,7 @@ button,
   }
 
   .blog__content {
-    padding: 46px 38.5px 41.5px 47.5px;
+    padding: 51px 38.5px 41.5px 47.5px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -4790,11 +4794,16 @@ button,
     margin: 0 0 31px;
   }
 
-  .contacts__list {
+  .contacts__list-wrapper {
     -ms-grid-columns: 266px auto;
     grid-template-columns: 266px auto;
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
     gap: 0 47px;
-    padding: 0;
+  }
+
+  .contacts__list-first {
+    margin: 0 0 0 -1px;
   }
 
   .contacts__item dt {
@@ -4808,6 +4817,11 @@ button,
     font-size: 18px;
     line-height: 27px;
     margin: 0 0 20px;
+  }
+
+  .contacts__link {
+    font-size: 18px;
+    max-width: 116px;
   }
 
   .footer {
@@ -5133,7 +5147,7 @@ button,
   }
 
   .blog {
-    padding: 35px 15px 33px;
+    padding: 32px 15px 33px;
   }
 
   .blog__wrapper {
@@ -5153,7 +5167,7 @@ button,
   }
 
   .blog__content p {
-    margin: 6px 0 30px;
+    margin: -3px 0 19px;
   }
 
   .blog__list dt {
@@ -5344,7 +5358,11 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     max-height: 240px;
-    margin: 28px 0 23px;
+    margin: 27px 0 27px;
+  }
+
+  .advantages__number--current {
+    gap: 20px;
   }
 
   .advantages__item--current p {
@@ -5361,7 +5379,7 @@ button,
   }
 
   .promotions {
-    padding: 15px 15px 50px;
+    padding: 12px 15px 50px;
   }
 
   .promotions__title {
@@ -5540,7 +5558,7 @@ button,
     margin: 0 0 35px;
   }
 
-  .contacts__list {
+  .contacts__list-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5548,35 +5566,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0;
   }
 
-  .contacts__item:nth-child(-n+3):not(:nth-child(2n)) {
-    border: none;
-  }
-
-  .contacts__item:first-child {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  .contacts__item:nth-child(-n+2):not(:first-child) {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-  }
-
-  .contacts__item:nth-child(n+3):not(:last-child) {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .contacts__item:last-child {
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 4;
-    order: 4;
+  .contacts__list-first {
+    border-right: none;
   }
 
   .contacts__item dt {
